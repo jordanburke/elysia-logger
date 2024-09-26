@@ -30,7 +30,7 @@
     "dev": "bun run --watch examples/basic.ts",
     "test": "bun run test:types && bun test",
     "test:types": "tsc --project tsconfig.test.json",
-    "build": "rm -fr dist && tsc --project tsconfig.esm.json",
+    "build": "tsc --project tsconfig.esm.json",
     "release": "npm run build && npm run test && npm publish --access public"
   },
   "peerDependencies": {
